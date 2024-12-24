@@ -1,25 +1,26 @@
-import React from 'react'
-import project1 from '../assets/project1.jpeg'
 
+import React from "react";
 
-const ProjectCard = ({title,main}) => {
+const ProjectCard = ({ title, main, image, demoLink, sourceCode }) => {
   return (
-    <div className='p-3 md:p-6 flex flex-col w-80 bg-[#0c0e19] shadow-xl shadow-slate-900 rounded-2xl'>
-        <img  className= 'p-4' src={project1} alt="" />
-        <h3 className='px-4 text-xl md:text-2xl font-bold leading-normal'>
-            {title}
-         </h3>
-        <p className='px-4 text-sm md:text-md leading-tight py-2'>{main}</p>
-        <div className='mt-2 p-2 md:p-4 flex gap-2 ma:gap-4'>
-            <button className='md:mt-10 text-white py-2 px-3 text-sm md:text-lg md:py-2 md:px-4 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697]'>
-                Demo
-            </button>
-            <button className='md:mt-10 text-white py-2 px-3 text-sm md:text-lg md:py-2 md:px-4 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697]'>
-                Source code
-            </button>
-        </div>
+    <div className="p-3 md:p-6 flex flex-col w-80 bg-[#0c0e19] shadow-xl shadow-slate-900 rounded-2xl">
+      <img className="p-4" src={image} alt={`${title} screenshot`} />
+      <h3 className="px-4 text-xl md:text-2xl font-bold leading-normal">{title}</h3>
+      <p className="px-4 text-sm md:text-md leading-tight py-2">{main}</p>
+      <div className="mt-2 p-2 flex gap-2">
+        <a href={demoLink} target="_blank" rel="noopener noreferrer">
+          <button className="text-white py-2 px-4 bg-blue-500 rounded-lg hover:bg-blue-700 transition duration-300">
+            Demo
+          </button>
+        </a>
+        <a href={sourceCode} target="_blank" rel="noopener noreferrer">
+          <button className="text-white py-2 px-4 bg-green-500 rounded-lg hover:bg-green-700 transition duration-300">
+            Source Code
+          </button>
+        </a>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProjectCard
+export default ProjectCard;

@@ -18,7 +18,7 @@ const Navbar = () => {
           <a href="#About">About</a>
         </li>
         <li className="text-md transition-all duration-300 p-1 md:p-0">
-          <a href="#Education">Educationss</a>
+          <a href="#Education">Educations</a>
         </li>
         <li className="text-md transition-all duration-300 p-1 md:p-0">
           <a href="#Skills">Skills</a>

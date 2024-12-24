@@ -1,24 +1,62 @@
-import React from 'react'
+import React from "react";
 
 const Education = () => {
   return (
-    <div className="text-white flex w-full justify-between items-start p-10 md:p-20">
-			<div id='Education'
-            className="md:w-2/4 md:pt-10">
-				<h1 className="text-3xl md:text-6xl font-bold flex leading-normal tracking-tighter">
-					<TextChange/>
-				</h1>
-				<p className="text-sm md:text-2xl tracking-tight mt-4">
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis
-					numquam distinctio sequi
-				</p>
-				<button className="mt-5 md:md-10 text-white py-2 px-3 text-sm md:text-lg md:py-2 md:px-4 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697]">
-					Contact Me
-				</button>
-			</div>
-			
-		</div>
-  )
-}
+    <div id="Education" className="p-10 md:p-24 text-white">
+      <h1 className="text-2xl md:text-4xl text-white font-bold">Education</h1>
+      <div className="mt-8">
+        {/* University Section */}
+        <div className="mb-8">
+          <h2 className="text-xl md:text-2xl font-bold">University</h2>
+          <p className="mt-2 text-sm md:text-lg">
+            <strong>University Name:</strong> Siliguri Institute of Technology
+          </p>
+          <p className="text-sm md:text-lg">
+            <strong>Degree:</strong> Bachelor of Technology in Computer Science
+          </p>
+          <p className="text-sm md:text-lg">
+            <strong>Year:</strong> 2021- 2025
+          </p>
+          <p className="text-sm md:text-lg">
+            <strong>CGPA:</strong> 8.3
+          </p>
+        </div>
 
-export default Education
+        
+
+        {/* 12th Grade Section */}
+        <div className="mb-8">
+          <h2 className="text-xl md:text-2xl font-bold">12th Grade</h2>
+          <p className="mt-2 text-sm md:text-lg">
+            <strong>School Name:</strong> Kendriya Vidyalaya Sevoke Road
+          </p>
+          <p className="text-sm md:text-lg">
+            <strong>Stream:</strong> Science (PCM)
+          </p>
+          <p className="text-sm md:text-lg">
+            <strong>Year:</strong> 2020 - 2021
+          </p>
+          <p className="text-sm md:text-lg">
+            <strong>Percentage:</strong> 80%
+          </p>
+        </div>
+
+		{/* 10th Grade Section */}
+        <div className="mb-8">
+          <h2 className="text-xl md:text-2xl font-bold">10th Grade</h2>
+          <p className="mt-2 text-sm md:text-lg">
+            <strong>School Name:</strong> Kendriya Vidyalaya Sevoke Road
+          </p>
+          <p className="text-sm md:text-lg">
+            <strong>Year:</strong> 2018 - 2019
+          </p>
+          <p className="text-sm md:text-lg">
+            <strong>Percentage:</strong> 78%
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Education;

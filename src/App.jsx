@@ -4,6 +4,7 @@ import About from './component/About'
 import Skills from "./component/Skills"
 import Project from "./component/Project"
 import Footer from "./component/Footer"
+import Education from "./component/Education"
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar/>
       <Home/>
       <About/>
+      <Education/>
       <Skills/>
       <Project/>
       <Footer/>
